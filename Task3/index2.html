@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Comment</legend>
+            <label for="comment">Your Comments (textarea):</label>
+            <textarea id="comment" name="comment" rows="10" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>File Upload</legend>
+            <label for="file">Upload a file:</label>
+            <input id="file" type="file">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Specialized Text Inputs</legend>
+            <div>
+            <label for="site">Search this site:</label>
+            <input id="site" type="search">
+            </div>
+            <br>
+            <div>
+            <label for="website">Your Website URL:</label>
+            <input id="website" type="url" name="website" placeholder="https://example.com">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Date & Time</legend>
+            <div>
+            <label for="date">Date:</label>
+            <input id="date" type="date" name="date">
+            </div>
+            <br>
+              <div>
+            <label for="month">Month:</label>
+            <input id="month" type="month" name="month">
+            </div>
+            <br>
+              <div>
+            <label for="time">Time:</label>
+            <input id="time" type="time" name="time">
+            </div>
+        </fieldset>
+        <br>
+            <fieldset>
+            <legend>Datalist (Suggestions)</legend>
+            <label for="sugg">Choose a Browser (with suggestion):</label>
+            <input id="sugg" list="suggestion" name="suggestion">
+            <datalist id="suggestion">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="C++">
+            <option value="Python">
+            </datalist>
+        </fieldset>
+        <br>
+            <input type="submit" value="Submit Form">
+            <button type="clear">Clear Form</button>
+    </form>
+</body>
+</html>

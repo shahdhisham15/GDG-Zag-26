@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic HTML Form Elements</h1>
+    <form>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <div>
+        <label for="name">Name(Text):</label>
+        <input id="name" type="text" required>
+    </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Contact & Security</legend>
+    <div>
+       <label for="email">Email:</label>
+       <input id="email" type="email" required>
+    </div>
+    <br>
+    <div>
+       <label for="pass">Password:</label>
+       <input id="pass" type="password" required>
+    </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Preferences</legend>
+    <div>
+       <label for="color">Favorite color:</label>
+       <input id="color" type="color">
+    </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Range & Options</legend>
+    <div>
+       <label for="range">Volume(Range 0-100):</label>
+       <input id="range" type="range" min="0" max="100">
+    </div>
+    <div>
+        <p>Select your favourite pet:</p>
+       <div>
+        <input id="dog" type="radio" name="s" value="Dog">
+        <label for="dog">Dog</label>
+       </div>
+       <div>
+        <input id="cat" type="radio" name="s" value="Cat">
+        <label for="cat">Cat</label>
+       </div>
+       <div>
+        <input id="bird" type="radio" name="s" value="Bird">
+        <label for="bird">Bird</label>
+       </div>
+    </div>
+    <br>
+    <p>Intersets (Check all that apply):</p>
+    <div>
+        <input id="code" type="checkbox">
+        <label for="code">Coding</label>
+    </div>
+    <div>
+        <input id="music" type="checkbox" name="h" value="Music">
+        <label for="music">Music</label>
+    </div>
+    <div>
+        <input id="travel" type="checkbox" name="h" value="Travel" checked>
+        <label for="travel">Travel</label>
+    </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Selection</legend>
+    <label for="country">Choose a country:</label>
+    <select id="country" name="country">
+        <option value="united kingdom">United Kingdom</option>
+    </select>
+  </fieldset>
+    </form>
+</html>
