@@ -1,0 +1,40 @@
+.x{
+    text-align: center;
+    text-shadow: 3px 3px 0 rgb(255, 136, 0),
+    6px 6px 0 rgb(125, 125, 233), 9px 9px 0 violet;
+}
+.y{
+text-transform: uppercase;
+}
+.z{
+text-transform: capitalize;
+}
+.a{
+text-transform: lowercase;
+}
+.b{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(177, 172, 172);
+    word-break: break-all;
+    white-space: normal;
+}
+.c{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(177, 172, 172);
+    text-overflow: clip;
+}
+.d{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(177, 172, 172);
+    text-overflow: ellipsis;
+}
+.e{
+    background-color: rgb(51, 126, 103);
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
