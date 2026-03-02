@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Data types and variables:
+        let NumberOne=10;
+        let NumberTwo=20;
+        console.log(""+NumberOne+NumberTwo); 
+        console.log(typeof(NumberOne+NumberTwo));
+        console.log(`${NumberOne}${NumberTwo}`);
+        console.log(typeof(`${NumberOne}${NumberTwo}`)); 
+        console.log(NumberTwo+"\n"+NumberOne);
+        console.log(`${NumberTwo}
+${NumberOne}`);
+
+console.log("`I'm In\n"+ 
+            "\\\\\n"+ 
+            "Love \\\\ \"\"\" ...\n"+ 
+            "++ With ++\n"+ 
+            "\\\\\"\"\"\\\"\"\"\n"+ 
+            "\"\"\"JavaScript\"\"\"~`");
+    
+
+            //Operators
+let a = 21;
+let b = 20;
+console.log("_"+a+"_"+b+a+"_"+b+a+"_"+b+a+"_"+b+"_");
+    
+    // Replace ? With Arithmetic Operators
+console.log(10 * 20 - 15 % 3 + 190 + 10 - 400); // 0
+
+let num = 3;
+// Solution One
+console.log(num+num); // 6
+// Solution Two
+console.log(num+true+true+true); // 6
+// Soultion Three
+console.log(num+true+true+true+true-true); // 6
+// Soultion Four
+console.log(num*(true+true)); // 6
+// Solution Five
+console.log(num*num-num); // 6
+// Solution Six
+console.log(num**(true+true)-num); // 6
+
+
+//Numbers
+console.log(100_000); // 100000
+console.log(100000); // 100000
+console.log(5e4 + 5e4); // 100000
+console.log(10*10000); // 100000
+console.log(100*1000); // 100000
+console.log(1e5); // 100000
+console.log(10**5); // 100000
+console.log(99999+1); // 100000
+console.log(100001-1); // 100000
+console.log(200000/2); // 100000
+console.log(Number('100000')); // 100000
+console.log(parseInt('100000')); // 100000
+
+console.log(Math.abs(-9007199254740991)); // 9007199254740991
+
+console.log(String(9007199254740991).length); // 16
+
+
+//Strings and Methods:
+let userName = "Elzero";
+console.log(userName[0].toLowerCase()); // e
+console.log(userName.charAt(0).toLowerCase()); // e
+console.log(userName.slice(0,1).toLowerCase()); // e
+console.log(userName.substring(0,1).toLowerCase()); // e
+console.log(userName.split("")[0].toLowerCase()); // e
+console.log(userName[0].toLowerCase().repeat(3)); // eee
+
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
+console.log(word.toLowerCase().includes(letterZ)); // True
+console.log(word.toLowerCase().startsWith(letterE)); // True
+console.log(word.toLowerCase().endsWith(letterO.toLowerCase())); // True
+
+
+//Comparison & Logical Operators:
+console.log(100 == "100"); // true
+console.log(100 < 1000); // true
+console.log(110 > 100 > 10 < 20); // true
+console.log(-10 == "-10"); // true
+console.log(- -50 > +"-40"); // true
+console.log(+ 10 < -"-40"); // true
+console.log(+ "10" == 10); // true
+console.log(! 20 === false); // true
+
+let num1 = 10;
+let num2 = 20;
+console.log(num1<num2); // true
+console.log(num1!=num2); // true
+console.log(num2>num1); // true
+console.log(num1+num2>num2); // true
+console.log(num2>=num1); // true
+console.log(num1<=num2); // true
+
+
+//If Condition:
+// Test Case 1
+ num = 9; // "009"
+if(num<10){
+    console.log("00"+num);
+}
+// Test Case 2
+ num = 20; // "020"
+if(10<num<100){
+    console.log("0"+num);
+}
+// Test Case 3
+ num = 110; // "110"
+if(num>=100){
+    console.log(num);
+}
+
+ num1 = 9;
+let str = "9";
+let str2 = "20";
+if(num1==str){
+    console.log(num1 +" Is The Same Value As "+ str);
+}
+if(num1!==str){
+    console.log(num1 + " Is The Same Value As " + str + " But Not The Same Type");
+}
+if(num1==str2){
+    console.log(num1 + " Is Not The Same Value Or The Same Type As " + str2);
+}
+if(str!==str2){
+    console.log(str + " Is The Same Type As " + str2 + " But Not The Same Value");
+}
+// Output
+"{num1} Is The Same Value As {str}"
+"{num1} Is The Same Value As {str} But Not The Same Type"
+"{num1} Is Not The Same Value Or The Same Type As {str2}"
+"{str} Is The Same Type As {str2} But Not The Same Value"
+
+
+//Switch Statement:
+let day = "   friday  ";
+// You Need To Remove Spaces And Make First Letter Capital => Friday
+day=day.trim();
+day=day.charAt(0).toUpperCase();
+switch(day){
+    case  day = "Friday":
+    case  day = "Saturday":
+    case  day = "Sunday":
+        console.log("No Appointments Available");
+        break;
+    case day = "Monday":
+    case day = "Thursday":
+        console.log("From 10:00 AM To 5:00 PM");
+        break;
+    case day = "Tuesday":
+        console.log("From 10:00 AM To 6:00 PM");
+        break;
+    case day = "Wednesday":
+        console.log("From 10:00 AM To 7:00 PM");
+        break;
+    default:
+        console.log("Its Not A Valid Day");
+}
+
+
+//Loop - For:
+let start = 10;
+let end = 100;
+let exclude = 40;
+for (let i = start; i <= end; i += start) {
+  if (i==exclude) {
+    continue;
+  }
+  console.log(i);
+}
+
+start = 10;
+end = 0;
+let stop = 3;
+for (let i = start; i >= end; i--) {
+  if (i < 10) {
+    console.log("0" + i);
+  } else {
+    console.log(i);
+  }
+  if (i === stop) {
+    break;
+  }
+}
+
+
+//Loop - While:
+let friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let index = 0;
+let counter = 0;
+while (index < friends.length) {
+if (friends[index].startsWith("A")) {
+    index++;
+    continue;
+  }}
+
+
+  //Function And Parameters:
+function sayHello(theName, theGender) {
+  if (theGender === "Male") {
+    console.log(`Hello Mr ${theName}`);
+  } else if (theGender === "Female") {
+    console.log(`Hello Miss ${theName}`);
+  } else {
+    console.log(`Hello ${theName}`);
+  }
+}
+sayHello("Osama", "Male");
+sayHello("Eman", "Female");
+sayHello("Sameh");
+
+function checkStatus(a, b, c) {
+  let name;
+  let age;
+  let status;
+
+  if (typeof a === "string") name = a;
+  else if (typeof a === "number") age = a;
+  else if (typeof a === "boolean") status = a;
+
+  if (typeof b === "string") name = b;
+  else if (typeof b === "number") age = b;
+  else if (typeof b === "boolean") status = b;
+
+  if (typeof c === "string") name = c;
+  else if (typeof c === "number") age = c;
+  else if (typeof c === "boolean") status = c;
+
+  if (status === true) {
+    console.log(`Hello ${name}, Your Age Is ${age}, You Are Available For Hire`);
+  } else {
+    console.log(`Hello ${name}, Your Age Is ${age}, You Are Not Available For Hire`);
+  }
+}
+checkStatus("Osama", 38, true);
+checkStatus(38, "Osama", true);
+checkStatus(true, 38, "Osama");
+checkStatus(false, "Osama", 38);
+
+
+//Function And Scopes:
+function createSelectBox(startYear, endYear) {
+    const select = document.createElement("select");
+  for(let i= startYear;i<=endYear;i++){
+    const option = document.createElement("option");
+    option.value=i;
+    option.textContent=i;
+    select.appendChild(option);
+  }
+  document.body.appendChild(select);
+}
+
+createSelectBox(2000, 2021);
+const itsMe = () => "Iam A Normal Function";
+console.log(itsMe());
+const urlCreate = (protocol, web, tld) => `${protocol}`;
+console.log(urlCreate("https", "elzero", "org")); 
+</script>
+</body>
+</html>"
