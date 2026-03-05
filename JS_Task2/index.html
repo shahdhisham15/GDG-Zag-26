@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //String tasks:
+let userName = "Elzero";
+console.log(userName.charAt(0).toLowerCase()); // e
+console.log(userName[0].toLowerCase()); // e
+console.log(userName.slice(0,1).toLowerCase()); // e
+console.log(userName.substring(0,1).toLowerCase()); // e
+console.log(userName.split("")[0].toLowerCase()); // e
+console.log(userName[0].toLowerCase().repeat(3)); // eee
+
+let word = "Elzero";
+let letterZ = "z";
+let letterE = "e";
+let letterO = "O";
+console.log(word.toLowerCase().includes(letterZ)); // True
+console.log(word.toLowerCase().startsWith(letterE)); // True
+console.log(word.toLowerCase().endsWith(letterO.toLowerCase())); // True
+
+
+    //Array tasks:
+let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+let num = 3;
+// Method 1
+console.log(myFriends.pop());
+console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+// Method 2
+console.log(myFriends.slice(0,1,2,3)); // ["Ahmed", "Elham", "Osama"];
+console.log(myFriends);
+
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+console.log(friends.pop());
+console.log(friends.shift());
+console.log(friends); // ["Eman", "Osama"]
+
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = [];
+finalArr=[arrTwo[2],arrOne[2],arrOne[1],arrOne[0],arrTwo[1],arrTwo[0]];
+console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+
+let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+console.log(words[2][0].slice(!0+!0,words[2][0].length).toUpperCase()); // ZERO
+
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+if(haystack.includes(needle)){
+console.log("found");
+}
+
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+allArrs = arr1.concat("",arr2);
+console.log(allArrs.sort().join("").slice(4,7).toLowerCase()); // fxy
+
+
+    //Date task:
+let birthday = new Date("6 june , 2005");
+let dateNow = new Date();
+let diff = dateNow - birthday;
+console.log(Math.floor(diff / 1000) + " Seconds");
+console.log(Math.floor(diff / (1000 * 60)) + " Minutes");
+console.log(Math.floor(diff / (1000 * 60 * 60)) + " Hours");
+console.log(Math.floor(diff / (1000 * 60 * 60 * 24)) + " Days");
+console.log(Math.floor(diff / (1000 * 60 * 60 * 24 * 30)) + " Months");
+console.log(Math.floor(diff / (1000 * 60 * 60 * 24 * 30 * 12)) + " Years");
+    </script>
+</body>
+</html>
